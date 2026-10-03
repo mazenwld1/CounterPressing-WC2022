@@ -1,0 +1,18 @@
+# StatsBomb data is NOT redistributed here - clone it separately into ./open-data
+open-data/
+data/
+
+# generated cache (rebuilt automatically, ~1 min)
+counterpress_dataset.csv
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
