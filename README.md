@@ -28,6 +28,15 @@ Nested, repeated cross-validation where **whole matches** are held out (3 repeat
 - A second target, *"is the ball regained within 5 seconds?"*, is only weakly predictable (ROC-AUC 0.63, base rate 6%).
 - Full tables, discussion and limitations: **[docs/writeup.md](docs/writeup.md)**. Raw numbers: [results/final_results.csv](results/final_results.csv).
 
+## Dataset size
+| | Turnovers | Counterpress | Regain in 5 s |
+|---|---|---|---|
+| With a 360 frame (used in the model) | 2,823 | 1,423 (50.4%) | 182 (6.4%) |
+| Without goalkeeper wins | 2,497 | 1,412 (56.5%) | 182 (7.3%) |
+
+64 matches, about 44 turnovers per match. 332 of 3,155 detected turnovers had no 360 frame and were dropped.
+The regain target has only 182 positive cases, so its results are noisy.
+
 ## How it works
 
 ```
